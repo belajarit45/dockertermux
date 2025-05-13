@@ -11,27 +11,28 @@ This repo is a combination of [this](https://github.com/egandro/docker-qemu-arm)
   ```
 
   And start it with:
-  
+   # Login credentials → USER: root PASSWORD: andrian123
   ``` sh
-  # Login credentials → USER: root PASSWORD: andrian123
-  ~/alpine/startqemu.sh
+ 
+  cd alpine/startqemu.sh
   ```
   
   Inside this virtual machine you can use docker as you would do in a normal computer.
 
 ## How to use: Portainer
-
-  Run it with
-  ``` sh
   # Run the container → Then open this URL in your browser to use it: http://localhost:9000
-  docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v ~/docker-volumes/portainer:/home portainer/portainer-ce && echo " * Open http://localhost:9000 in your browser to use portainer." && echo " * You can make sure the container is running with 'docker ps'."
+  Run it with
+  " * Open http://localhost:9000 in your browser to use portainer." && echo " * You can make sure the container is running with 'docker ps'."
+  ``` sh
+  docker run -d -p 8000:8000 -p 9000:9000 --name=portainer --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v ~/docker-volumes/portainer:/home portainer/portainer-ce && echo 
   ```
 
   If you want to access the Portainer Dashboard from another device on your same network, you will need your device local IP address.
   
+    # Example:
   ``` sh
-  # Example:
-  http://192.168.123.123:9000
+
+  http://192.168.1.2:9000
   ```
 
 ## How to use: Kubernetes
