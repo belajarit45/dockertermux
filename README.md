@@ -14,7 +14,7 @@ This repo is a combination of [this](https://github.com/egandro/docker-qemu-arm)
    # Login credentials → USER: root PASSWORD: andrian123
   ``` sh
  
-  cd alpine/startqemu.sh
+  cd alpine && ./startqemu.sh
   ```
   
   Inside this virtual machine you can use docker as you would do in a normal computer.
