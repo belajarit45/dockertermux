@@ -1,5 +1,24 @@
 source  https://github.com/Zeioth/termux-docker/tree/main
 
+  Create the n8n (optional) with:
+  # Tarik image resmi n8n
+  ``` sh
+  docker pull n8nio/n8n
+  ```
+  # Buat direktori untuk menyimpan konfigurasi & data n8n
+  ``` sh
+  mkdir -p ~/n8n-data
+  ```
+  # Jalankan container n8n
+  ``` sh
+  docker run -d \
+    --name n8n \
+    --restart=always \
+    -p 5678:5678 \
+    -v ~/.n8n:/home/node/.n8n \
+    n8nio/n8n
+  ```
+
 # termux-docker
 This repo is a combination of [this](https://github.com/egandro/docker-qemu-arm) and [this](https://github.com/mrp-yt/docker_and_portainer_on_dex), except it works and it is actively maintained.
 
