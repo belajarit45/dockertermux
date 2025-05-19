@@ -18,6 +18,14 @@ source  https://github.com/Zeioth/termux-docker/tree/main
     -v ~/.n8n:/home/node/.n8n \
     n8nio/n8n
   ```
+  # Akses di web
+  ``` sh
+  http://localhost:5678
+  ```
+
+
+
+
 
 # termux-docker
 This repo is a combination of [this](https://github.com/egandro/docker-qemu-arm) and [this](https://github.com/mrp-yt/docker_and_portainer_on_dex), except it works and it is actively maintained.
