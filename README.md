@@ -7,7 +7,7 @@ source  https://github.com/Zeioth/termux-docker/tree/main
   ```
   # Buat direktori untuk menyimpan konfigurasi & data n8n
   ``` sh
-  mkdir -p ~/n8n-data
+  mkdir -p ~/.n8n
   ```
   # Jalankan container n8n
   ``` sh
