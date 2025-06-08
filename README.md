@@ -5,6 +5,8 @@ source  https://github.com/Zeioth/termux-docker/tree/main
   ``` sh
   docker pull n8nio/n8n
   ```
+
+  Step penginstalannya :
   # Buat direktori untuk menyimpan konfigurasi & data n8n
   ``` sh
   mkdir -p ~/.n8n
