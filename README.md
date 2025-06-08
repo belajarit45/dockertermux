@@ -38,7 +38,7 @@ This repo is a combination of [this](https://github.com/egandro/docker-qemu-arm)
   Create the virtual machine with:
   
   ``` sh
-  curl -o setup.sh https://raw.githubusercontent.com/belajarit45/dockertermux/main/setup.sh && chmod 755 ./setup.sh && ./setup.sh
+pkg update -y &&  curl -o setup.sh https://raw.githubusercontent.com/belajarit45/dockertermux/main/setup.sh && chmod 755 ./setup.sh && ./setup.sh
   ```
 
   And start it with:
